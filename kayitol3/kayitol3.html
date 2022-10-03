@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Kayıt Ol</h1>
+        </div>
+        <hr>
+        <div class="kayitol">
+            <form action="">
+                <div class="username2">
+                    <label for="username">Kullanıcı Adı:</label>
+                    <br>
+                    <input type="text" id="username" pattern="[a-z0-9._-]{6,32}" placeholder="örn: ali.1903, ahmet_1907" title="Kullanıcı adınız en az 6 haneden ibaret olmalı ve büyük harf içermemelidir!" required autofocus>
+                </div>
+                <br>
+                <div class="pass2">
+                    <label for="pass">Şifre:</label>
+                    <br>
+                    <input type="password" id="pass" pattern="[A-Za-z0-9._-]{8,32}" placeholder="Şifrenizi giriniz..." title="Şifreniz en az 8 karakterden ibaret olmalıdır!" required>
+                </div>
+                <br>
+                <div class="tc-kimlik2">
+                    <label for="tc-kimlik">TC Kimlik Numarası:</label>
+                    <br>
+                    <input type="text" id="tc-kimlik" pattern="[1-9]{1}[0-9]{10}" placeholder="örn: 12345678901" title="11 haneli TC kimlik numarasını giriniz..." required>
+                </div>
+                <br>
+                <div class="name2">
+                    <label for="name">İsim:</label>
+                    <br>
+                    <input type="text" id="name" pattern="[A-Za-z]{2,32}" placeholder="İsminizi giriniz..." title="Doldurulması zorunlu alandır, lütfen rakam girmeyiniz, isminizi giriniz." required>
+                </div>
+                <br>
+                <div class="surname2">
+                    <label for="surname">Soyisim:</label>
+                    <br>
+                    <input type="text" id="surname" pattern="[A-Za-z]{2,64}" placeholder="Soyisminizi giriniz..." title="Doldurulması zorunlu alandır, lütfen rakam girmeyiniz, soyisminizi giriniz." required>
+                </div>
+                <br>
+                <div class="cinsiyet2">
+                    <span>Cinsiyet:</span>
+                    <br>
+                    <input type="radio" id="erkek" name="cinsiyet">
+                    <label for="erkek">Erkek</label>
+                    <br>
+                    <input type="radio" id="kadin" name="cinsiyet">
+                    <label for="kadin">Kadın</label>
+                </div>
+                <br>
+                <div class="birthday2">
+                    <label for="birthday">Doğum Tarihi:</label>
+                    <br>
+                    <input type="date" id="birthday" min="1958-01-01" max="2004-12-31" required>
+                </div>
+                <br>
+                <div class="sehir">
+                    <span>Yaşadığınız Şehir:</span>
+                    <br>
+                    <select>
+                        <option value="34">İstanbul</option>
+                        <option value="other">Yurtdışı</option>
+                        <option value="1">Adana</option>
+                        <option value="2">Adıyaman</option>
+                        <option value="3">Afyonkarahisar</option>
+                        <option value="4">Ağrı</option>
+                        <option value="5">Amasya</option>
+                        <option value="6">Ankara</option>
+                        <option value="7">Antalya</option>
+                        <option value="8">Artvin</option>
+                        <option value="9">Aydın</option>
+                        <option value="10">Balıkesir</option>
+                        <option value="11">Bilecik</option>
+                        <option value="12">Bingöl</option>
+                        <option value="13">Bitlis</option>
+                        <option value="14">Bolu</option>
+                        <option value="15">Burdur</option>
+                        <option value="16">Bursa</option>
+                        <option value="17">Çanakkale</option>
+                        <option value="18">Çankırı</option>
+                        <option value="19">Çorum</option>
+                        <option value="20">Denizli</option>
+                        <option value="21">Diyarbakır</option>
+                        <option value="22">Edirne</option>
+                        <option value="23">Elazığ</option>
+                        <option value="24">Erzincan</option>
+                        <option value="25">Erzurum</option>
+                        <option value="26">Eskişehir</option>
+                        <option value="27">Gaziantep</option>
+                        <option value="28">Giresun</option>
+                        <option value="29">Gümüşhane</option>
+                        <option value="30">Hakkari</option>
+                        <option value="31">Hatay</option>
+                        <option value="32">Isparta</option>
+                        <option value="33">Mersin</option>
+                        <option value="35">İzmir</option>
+                        <option value="36">Kars</option>
+                        <option value="37">Kastamonu</option>
+                        <option value="38">Kayseri</option>
+                        <option value="39">Kırklareli</option>
+                        <option value="40">Kırşehir</option>
+                        <option value="41">Kocaeli</option>
+                        <option value="42">Konya</option>
+                        <option value="43">Kütahya</option>
+                        <option value="44">Malatya</option>
+                        <option value="45">Manisa</option>
+                        <option value="46">Kahramanmaraş</option>
+                        <option value="47">Mardin</option>
+                        <option value="48">Muğla</option>
+                        <option value="49">Muş</option>
+                        <option value="50">Nevşehir</option>
+                        <option value="51">Niğde</option>
+                        <option value="52">Ordu</option>
+                        <option value="53">Rize</option>
+                        <option value="54">Sakarya</option>
+                        <option value="55">Samsun</option>
+                        <option value="56">Siirt</option>
+                        <option value="57">Sinop</option>
+                        <option value="58">Sivas</option>
+                        <option value="59">Tekirdağ</option>
+                        <option value="60">Tokat</option>
+                        <option value="61">Trabzon</option>
+                        <option value="62">Tunceli</option>
+                        <option value="63">Şanlıurfa</option>
+                        <option value="64">Uşak</option>
+                        <option value="65">Van</option>
+                        <option value="66">Yozgat</option>
+                        <option value="67">Zonguldak</option>
+                        <option value="68">Aksaray</option>
+                        <option value="69">Bayburt</option>
+                        <option value="70">Karaman</option>
+                        <option value="71">Kırıkkale</option>
+                        <option value="72">Batman</option>
+                        <option value="73">Şırnak</option>
+                        <option value="74">Bartın</option>
+                        <option value="75">Ardahan</option>
+                        <option value="76">Iğdır</option>
+                        <option value="77">Yalova</option>
+                        <option value="78">Karabük</option>
+                        <option value="79">Kilis</option>
+                        <option value="80">Osmaniye</option>
+                        <option value="81">Düzce</option>
+                    </select>
+                </div>
+                <br>
+                <div class="egitim2">
+                    <label for="egitim">Eğitim Durumu:</label>
+                    <br>
+                    <select id="egitim">
+                        <option value="lise">Lise</option>
+                        <option value="onlisans">Ön Lisans</option>
+                        <option value="lisans">Lisans</option>
+                        <option value="yukseklisans">Yüksek Lisans</option>
+                        <option value="doktora">Doktora</option>
+                        <option value="diger">Diğer</option>
+                    </select>
+                </div>
+                <br>
+                <div class="birthday2">
+                    <label for="biyografi">Kendini Anlat:</label>
+                    <br>
+                    <textarea id="biyografi" cols="30" rows="5" placeholder="örn: Ben Ahmet Özgümüş, 23 yaşındayım, bekarım, üniversite mezunuyum, çalışıyorum."></textarea>
+                </div>
+                <br>
+                <div class="sozlesme">
+                    <input type="radio" id="red-cevap" name="kurallar" checked>
+                    <label for="red-cevap"><a href="">Üyelik sözleşmesi</a>'ni okumadım, kabul etmiyorum.</label>
+                    <br>
+                    <input type="radio" id="kabul-cevap" name="kurallar">
+                    <label for="kabul-cevap"><a href="">Üyelik sözleşmesi</a>'ni okudum, kabul ediyorum.</label>
+                </div>
+                <br>
+                <div class="button">
+                    <button type="submit">Kaydol</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Sohbet sitesi kayıt formu</h1>
+        </div>
+        <hr>
+        <div class="kayitol">
+            <form action="">
+                <div class="username2">
+                    <label for="username">Kullanıcı Adı:</label>
+                    <br>
+                    <input type="text" id="username" pattern="[a-z0-9._-]{6,32}" title="Kullanıcı adı 8 karakterden az olmamalı ve büyük harf içermemelidir." placeholder="örn: ali.1903, ahmet_1903" required autofocus>
+                </div>
+                <br>
+                <div class="pass2">
+                    <label for="pass">Şifre:</label>
+                    <br>
+                    <input type="password" id="pass" pattern="[A-Za-z0-9._-]{8,32}" title="Şifre en az 8 karakterden ibaret olmalıdır." placeholder="Şifrenizi giriniz..." required>
+                </div>
+                <br>
+                <div class="mail2">
+                    <label for="mail">E-Posta:</label>
+                    <br>
+                    <input type="email" id="mail" placeholder="örn: ali.demir@gmail.com" title="E-Posta girmek zorunludur." required>
+                </div>  
+                <br>
+                <div class="name2">
+                    <label for="name">İsim:</label>
+                    <br>
+                    <input type="text" id="name" minlength="2" maxlength="32" placeholder="Adınız...">
+                </div>
+                <br>
+                <div class="surname2">
+                    <label for="surname">Surname:</label>
+                    <br>
+                    <input type="text" id="surname" minlength="2" maxlength="48" placeholder="Soyadınız...">
+                </div>
+                <br>
+                <div class="birthday2">
+                    <label for="birthday">Doğum Tarihiniz:</label>
+                    <br>
+                    <input type="date" id="birthday" min="1957-01-01" max="2004-12-31" title="18 yaşından küçüklerin girmesi yasaktır!" required>
+                </div>
+                <br>
+                <div class="cinsiyet2">
+                    <span>Cinsiyet:</span>
+                    <br>
+                    <input type="radio" id="erkek" name="cinsiyet">
+                    <label for="erkek">Erkek</label>
+                    <br>
+                    <input type="radio" id="kadin" name="cinsiyet">
+                    <label for="kadin">Kadın</label>
+                    <br>
+                    <input type="radio" id="diger" name="cinsiyet">
+                    <label for="diger">Belirtmek İstemiyorum</label>
+                </div>
+                <br>
+                <div class="medeni-durum2">
+                    <span>Medeni Durum:</span>
+                    <br>
+                    <input type="radio" id="evli" name="medeni-durum">
+                    <label for="evli">Evli</label>
+                    <br>
+                    <input type="radio" id="bekar" name="medeni-durum">
+                    <label for="bekar">Bekar</label>
+                    <br>
+                    <input type="radio" id="diger2" name="medeni-durum">
+                    <label for="diger2">Diğer</label>
+                    <br>
+                    <input type="radio" id="diger3" name="medeni-durum">
+                    <label for="diger3">Belirtmek İstemiyorum</label>
+                </div>
+                <br>
+                <div class="hobiler">
+                    <span>Hobiler:</span>
+                    <br>
+                    <input type="checkbox" id="spor">
+                    <label for="spor">Spor Yapmak</label>
+                    <br>
+                    <input type="checkbox" id="muzik">
+                    <label for="muzik">Müzik Dinlemek</label>
+                    <br>
+                    <input type="checkbox" id="kitap">
+                    <label for="">Kitap Okumak</label>
+                    <br>
+                    <input type="checkbox" id="alisveris">
+                    <label for="alisveris">Alışveriş Yapmak</label>
+                    <br>
+                    <input type="checkbox" id="diger4">
+                    <label for="diger4">Diğer</label>
+                    <br>
+                    <input type="checkbox" id="diger5">
+                    <label for="diger5">Belirtmek İstemiyorum</label>
+                </div>
+                <br>
+                <div class="sehir">
+                    <span>Yaşadığınız Şehir:</span>
+                    <br>
+                    <select>
+                        <option value="34">İstanbul</option>
+                        <option value="other">Yurtdışı</option>
+                        <option value="1">Adana</option>
+                        <option value="2">Adıyaman</option>
+                        <option value="3">Afyonkarahisar</option>
+                        <option value="4">Ağrı</option>
+                        <option value="5">Amasya</option>
+                        <option value="6">Ankara</option>
+                        <option value="7">Antalya</option>
+                        <option value="8">Artvin</option>
+                        <option value="9">Aydın</option>
+                        <option value="10">Balıkesir</option>
+                        <option value="11">Bilecik</option>
+                        <option value="12">Bingöl</option>
+                        <option value="13">Bitlis</option>
+                        <option value="14">Bolu</option>
+                        <option value="15">Burdur</option>
+                        <option value="16">Bursa</option>
+                        <option value="17">Çanakkale</option>
+                        <option value="18">Çankırı</option>
+                        <option value="19">Çorum</option>
+                        <option value="20">Denizli</option>
+                        <option value="21">Diyarbakır</option>
+                        <option value="22">Edirne</option>
+                        <option value="23">Elazığ</option>
+                        <option value="24">Erzincan</option>
+                        <option value="25">Erzurum</option>
+                        <option value="26">Eskişehir</option>
+                        <option value="27">Gaziantep</option>
+                        <option value="28">Giresun</option>
+                        <option value="29">Gümüşhane</option>
+                        <option value="30">Hakkari</option>
+                        <option value="31">Hatay</option>
+                        <option value="32">Isparta</option>
+                        <option value="33">Mersin</option>
+                        <option value="35">İzmir</option>
+                        <option value="36">Kars</option>
+                        <option value="37">Kastamonu</option>
+                        <option value="38">Kayseri</option>
+                        <option value="39">Kırklareli</option>
+                        <option value="40">Kırşehir</option>
+                        <option value="41">Kocaeli</option>
+                        <option value="42">Konya</option>
+                        <option value="43">Kütahya</option>
+                        <option value="44">Malatya</option>
+                        <option value="45">Manisa</option>
+                        <option value="46">Kahramanmaraş</option>
+                        <option value="47">Mardin</option>
+                        <option value="48">Muğla</option>
+                        <option value="49">Muş</option>
+                        <option value="50">Nevşehir</option>
+                        <option value="51">Niğde</option>
+                        <option value="52">Ordu</option>
+                        <option value="53">Rize</option>
+                        <option value="54">Sakarya</option>
+                        <option value="55">Samsun</option>
+                        <option value="56">Siirt</option>
+                        <option value="57">Sinop</option>
+                        <option value="58">Sivas</option>
+                        <option value="59">Tekirdağ</option>
+                        <option value="60">Tokat</option>
+                        <option value="61">Trabzon</option>
+                        <option value="62">Tunceli</option>
+                        <option value="63">Şanlıurfa</option>
+                        <option value="64">Uşak</option>
+                        <option value="65">Van</option>
+                        <option value="66">Yozgat</option>
+                        <option value="67">Zonguldak</option>
+                        <option value="68">Aksaray</option>
+                        <option value="69">Bayburt</option>
+                        <option value="70">Karaman</option>
+                        <option value="71">Kırıkkale</option>
+                        <option value="72">Batman</option>
+                        <option value="73">Şırnak</option>
+                        <option value="74">Bartın</option>
+                        <option value="75">Ardahan</option>
+                        <option value="76">Iğdır</option>
+                        <option value="77">Yalova</option>
+                        <option value="78">Karabük</option>
+                        <option value="79">Kilis</option>
+                        <option value="80">Osmaniye</option>
+                        <option value="81">Düzce</option>
+                    </select>
+                </div>
+                <br>
+                <div class="renk2">
+                    <label for="renk">Favori Renginiz:</label>
+                    <br>
+                    <input type="color" id="renk">
+                </div>
+                <br>
+                <div class="biyografi2">
+                    <label for="biyografi">Kendini Anlat:</label>
+                    <br>
+                    <textarea id="biyografi" cols="30" rows="5" placeholder="örn: Ben Mustafa Demir, 26 yaşındayım, bekarım, lisans mezunuyum, çalışıyorum."></textarea>
+                </div>
+                <br>
+                <div class="sozlesme">
+                    <input type="radio" id="red-cevap" name="kurallar" checked>
+                    <label for="red-cevap"><a href="#">Üyelik sözleşmesi</a>'ni okumadım, kabul etmiyorum.</label>
+                    <br>
+                    <input type="radio" id="kabul-cevap" name="kurallar">
+                    <label for="kabul-cevap"><a href="">Üyelik sözleşmesi</a>'ni okudum, kabul ediyorum.</label>
+                </div>
+                <br>
+                <div class="button">
+                    <button type="submit">Kaydol</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
